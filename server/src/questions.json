@@ -3,222 +3,222 @@ db.questions.insertMany([
     "question": "What is the correct syntax to print a message in JavaScript?",
     "options": ["A) print('Hello, World!')", "B) echo('Hello, World!')", "C) console.log('Hello, World!')", "D) System.out.println('Hello, World!')"],
     "correctAnswer": "C) console.log('Hello, World!')",
-    "topic": "672bc3c308b29f392f5b3c77"
+    "topic": "Javascript"
   },
   {
     "question": "Which of the following is NOT a primitive data type in JavaScript?",
     "options": ["A) String", "B) Boolean", "C) Object", "D) Number"],
     "correctAnswer": "C) Object",
-    "topic": "672bc3c308b29f392f5b3c77"
+    "topic": "Javascript"
   },
   {
     "question": "Which of the following keywords is used to declare a variable in JavaScript?",
     "options": ["A) var", "B) let", "C) const", "D) All of the above"],
     "correctAnswer": "D) All of the above",
-    "topic": "672bc3c308b29f392f5b3c77"
+    "topic": "Javascript"
   },
   {
     "question": "Which method is used to add a new element to the end of an array in JavaScript?",
     "options": ["A) push()", "B) pop()", "C) shift()", "D) unshift()"],
     "correctAnswer": "A) push()",
-    "topic": "672bc3c308b29f392f5b3c77"
+    "topic": "Javascript"
   },
   {
     "question": "Which of these is NOT a JavaScript data type?",
     "options": ["A) Undefined", "B) String", "C) Integer", "D) Null"],
     "correctAnswer": "C) Integer",
-    "topic": "672bc3c308b29f392f5b3c77"
+    "topic": "Javascript"
   },
   {
     "question": "What is the purpose of the 'this' keyword in JavaScript?",
     "options": ["A) Refers to the global object", "B) Refers to the function that invoked it", "C) Refers to the current object", "D) Refers to the prototype of the function"],
     "correctAnswer": "C) Refers to the current object",
-    "topic": "672bc3c308b29f392f5b3c77"
+    "topic": "Javascript"
   },
   {
     "question": "What is a closure in JavaScript?",
     "options": ["A) A function inside another function", "B) A variable that holds a function", "C) A function that returns an object", "D) A function that is automatically invoked"],
     "correctAnswer": "A) A function inside another function",
-    "topic": "672bc3c308b29f392f5b3c77"
+    "topic": "Javascript"
   },
   {
     "question": "Which operator is used to assign a value to a variable in JavaScript?",
     "options": ["A) =", "B) ==", "C) ===", "D) :"],
     "correctAnswer": "A) =",
-    "topic": "672bc3c308b29f392f5b3c77"
+    "topic": "Javascript"
   },
   {
     "question": "What is NaN in JavaScript?",
     "options": ["A) A number", "B) Not a Number", "C) A type of error", "D) A string"],
     "correctAnswer": "B) Not a Number",
-    "topic": "672bc3c308b29f392f5b3c77"
+    "topic": "Javascript"
   },
   {
     "question": "What is the purpose of the `Array.isArray()` method in JavaScript?",
     "options": ["A) To check if a variable is an object", "B) To check if a variable is a string", "C) To check if a variable is an array", "D) To check if a variable is a function"],
     "correctAnswer": "C) To check if a variable is an array",
-    "topic": "672bc3c308b29f392f5b3c77"
+    "topic": "Javascript"
   },
   {
     "question": "Which HTML tag is used to define an unordered list?",
     "options": ["A) <ul>", "B) <ol>", "C) <li>", "D) <list>"],
     "correctAnswer": "A) <ul>",
-    "topic": "672b32d42d394c04003ed147"
+    "topic": "HTML"
   },
   {
     "question": "Which of the following HTML attributes is used to specify the URL of a link?",
     "options": ["A) href", "B) src", "C) alt", "D) action"],
     "correctAnswer": "A) href",
-    "topic": "672b32d42d394c04003ed147"
+    "topic": "HTML"
   },
   {
     "question": "What does the <a> tag in HTML represent?",
     "options": ["A) Anchor (link)", "B) Image", "C) Audio", "D) Paragraph"],
     "correctAnswer": "A) Anchor (link)",
-    "topic": "672b32d42d394c04003ed147"
+    "topic": "HTML"
   },
   {
     "question": "Which tag is used to define a table in HTML?",
     "options": ["A) <table>", "B) <thead>", "C) <tr>", "D) <tbody>"],
     "correctAnswer": "A) <table>",
-    "topic": "672b32d42d394c04003ed147"
+    "topic": "HTML"
   },
   {
     "question": "Which tag is used to display images in HTML?",
     "options": ["A) <img>", "B) <image>", "C) <pic>", "D) <photo>"],
     "correctAnswer": "A) <img>",
-    "topic": "672b32d42d394c04003ed147"
+    "topic": "HTML"
   },
   {
     "question": "Which HTML tag is used to define a line break?",
     "options": ["A) <break>", "B) <br>", "C) <lb>", "D) <line>"],
     "correctAnswer": "B) <br>",
-    "topic": "672b32d42d394c04003ed147"
+    "topic": "HTML"
   },
   {
     "question": "Which tag is used to add a comment in HTML?",
     "options": ["A) <!-- comment -->", "B) // comment", "C) /* comment */", "D) <comment> comment </comment>"],
     "correctAnswer": "A) <!-- comment -->",
-    "topic": "672b32d42d394c04003ed147"
+    "topic": "HTML"
   },
   {
     "question": "Which HTML attribute is used to define inline CSS?",
     "options": ["A) style", "B) class", "C) id", "D) href"],
     "correctAnswer": "A) style",
-    "topic": "672b32d42d394c04003ed147"
+    "topic": "HTML"
   },
   {
     "question": "Which CSS property is used to change the background color of an element?",
     "options": ["A) background-color", "B) color", "C) bg-color", "D) background-image"],
     "correctAnswer": "A) background-color",
-    "topic": "672bc3d308b29f392f5b3c7b"
+    "topic": "CSS"
   },
   {
     "question": "Which CSS property is used to change the text color of an element?",
     "options": ["A) font-color", "B) text-color", "C) color", "D) background-color"],
     "correctAnswer": "C) color",
-    "topic": "672bc3d308b29f392f5b3c7b"
+    "topic": "CSS"
   },
   {
     "question": "What is the default value of the position property in CSS?",
     "options": ["A) relative", "B) static", "C) fixed", "D) absolute"],
     "correctAnswer": "B) static",
-    "topic": "672bc3d308b29f392f5b3c7b"
+    "topic": "CSS"
   },
   {
     "question": "Which of the following is used to add space between the content and the border of an element in CSS?",
     "options": ["A) margin", "B) padding", "C) border-spacing", "D) gap"],
     "correctAnswer": "B) padding",
-    "topic": "672bc3d308b29f392f5b3c7b"
+    "topic": "CSS"
   },
   {
     "question": "What is the correct CSS syntax to change the font-size of a paragraph to 16px?",
     "options": ["A) p {font-size: 16px;}", "B) font-size(p): 16px;", "C) p:font-size=16px;", "D) <p style='font-size:16px;'>"],
     "correctAnswer": "A) p {font-size: 16px;}",
-    "topic": "672bc3d308b29f392f5b3c7b"
+    "topic": "CSS"
   },
   {
     "question": "Which CSS property is used to set the space between the content of an element and its border?",
     "options": ["A) padding", "B) margin", "C) border-width", "D) spacing"],
     "correctAnswer": "A) padding",
-    "topic": "672bc3d308b29f392f5b3c7b"
+    "topic": "CSS"
   },
   {
     "question": "What is JSX in React?",
     "options": ["A) A JavaScript syntax extension", "B) A new way to create JavaScript objects", "C) A CSS preprocessor", "D) A state management library"],
     "correctAnswer": "A) A JavaScript syntax extension",
-    "topic": "672bc3d908b29f392f5b3c7d"
+    "topic": "React"
   },
   {
     "question": "Which method in React is used to render the components?",
     "options": ["A) render()", "B) display()", "C) createElement()", "D) mount()"],
     "correctAnswer": "A) render()",
-    "topic": "672bc3d908b29f392f5b3c7d"
+    "topic": "React"
   },
   {
     "question": "Which hook is used to manage the state in functional components in React?",
     "options": ["A) useState", "B) useEffect", "C) useReducer", "D) useRef"],
     "correctAnswer": "A) useState",
-    "topic": "672bc3d908b29f392f5b3c7d"
+    "topic": "React"
   },
   {
     "question": "How do you create a class component in React?",
     "options": ["A) class MyComponent extends React.Component {}", "B) function MyComponent() {}", "C) const MyComponent = () => {}", "D) React.createClass({})"],
     "correctAnswer": "A) class MyComponent extends React.Component {}",
-    "topic": "672bc3d908b29f392f5b3c7d"
+    "topic": "React"
   },
   {
     "question": "What is the purpose of the `useEffect` hook in React?",
     "options": ["A) To manage component lifecycle", "B) To handle state changes", "C) To create new components", "D) To manage context values"],
     "correctAnswer": "A) To manage component lifecycle",
-    "topic": "672bc3d908b29f392f5b3c7d"
+    "topic": "React"
   },
   {
     "question": "What is the virtual DOM in React?",
     "options": ["A) A lightweight representation of the actual DOM", "B) A web browser's built-in DOM", "C) A state management system", "D) A library for handling events"],
     "correctAnswer": "A) A lightweight representation of the actual DOM",
-    "topic": "672bc3d908b29f392f5b3c7d"
+    "topic": "React"
   },
   {
     "question": "Which of the following is used for routing in React?",
     "options": ["A) react-router", "B) react-route", "C) react-navigation", "D) react-redirect"],
     "correctAnswer": "A) react-router",
-    "topic": "672bc3d908b29f392f5b3c7d"
+    "topic": "React"
   },
   {
     "question": "Which of the following is NOT a Node.js core module?",
     "options": ["A) fs", "B) path", "C) http", "D) jquery"],
     "correctAnswer": "D) jquery",
-    "topic": "672bc3cb08b29f392f5b3c79"
+    "topic": "NodeJs"
   },
   {
     "question": "Which function is used to create a simple HTTP server in Node.js?",
     "options": ["A) http.createServer()", "B) fs.createServer()", "C) node.createServer()", "D) server.create()"],
     "correctAnswer": "A) http.createServer()",
-    "topic": "672bc3cb08b29f392f5b3c79"
+    "topic": "NodeJs"
   },
   {
     "question": "Which command is used to install a package in Node.js using npm?",
     "options": ["A) npm start", "B) npm install <package_name>", "C) npm run", "D) node install <package_name>"],
     "correctAnswer": "B) npm install <package_name>",
-    "topic": "672bc3cb08b29f392f5b3c79"
+    "topic": "NodeJs"
   },
   {
     "question": "Which module is used for file system operations in Node.js?",
     "options": ["A) path", "B) fs", "C) http", "D) express"],
     "correctAnswer": "B) fs",
-    "topic": "672bc3cb08b29f392f5b3c79"
+    "topic": "NodeJs"
   },
   {
     "question": "Which of the following is used to handle asynchronous code in Node.js?",
     "options": ["A) Promises", "B) async/await", "C) Callbacks", "D) All of the above"],
     "correctAnswer": "D) All of the above",
-    "topic": "672bc3cb08b29f392f5b3c79"
+    "topic": "NodeJs"
   },
   {
     "question": "How can you create a basic web server using Express in Node.js?",
     "options": ["A) const app = express(); app.listen(3000);", "B) express.createServer();", "C) const server = express(); server.run();", "D) new Express.Server().start();"],
     "correctAnswer": "A) const app = express(); app.listen(3000);",
-    "topic": "672bc3cb08b29f392f5b3c79"
+    "topic": "NodeJs"
   }
 ])

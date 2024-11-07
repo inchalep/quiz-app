@@ -10,7 +10,8 @@ const SignUpLogin = () => {
     [pathname]
   );
   return (
-    <div className='min-h-screen  bg-sky-900 flex justify-center items-center'>
+    <div className='min-h-screen  bg-sky-900 flex flex-col justify-center items-center'>
+      <h1 className='font-bold text-4xl text-white mb-4'>Quizzy Bizzy</h1>
       {isLoginPath ? <Login /> : <Registration />}
     </div>
   );

@@ -44,7 +44,7 @@ const Login = () => {
   return (
     <form
       onSubmit={handleSubmit(formHandler)}
-      className='p-7 py-12 shadow-lg rounded-md border border-gray-600 flex flex-col gap-y-6 w-4/12'
+      className='p-7 py-12 shadow-lg rounded-md border border-gray-600 flex flex-col gap-y-6 w-full md:w-4/12'
     >
       <h2 className='text-center text-gray-300 font-semibold text-xl'>Login</h2>
       <div className='flex flex-col relative'>

@@ -1,5 +1,5 @@
 import user from "./slices/userSlice";
-
+import quiz from "./slices/quizSlice";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/lib/storage";
@@ -13,6 +13,7 @@ const persistConfig = {
 
 const appReducer = combineReducers({
   user,
+  quiz,
 });
 
 const rootReducer = (state, action) => {
