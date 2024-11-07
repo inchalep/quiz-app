@@ -39,7 +39,41 @@ const loginSchema = Yup.object().shape({
   password: Yup.string().required("Password is required"),
 });
 
+const topicIdSchema = Yup.object().shape({
+  id: Yup.string().required("Id is required"),
+});
+
+const addTopicSchema = Yup.object().shape({
+  name: Yup.string().required("Topic name is required"),
+});
+
+const addQuestionSchema = Yup.object().shape({
+  question: Yup.string().required("Question is required"),
+  options: Yup.array()
+    .min(1, "Option must have at least one string")
+    .required("Options is required"),
+  correctAnswer: Yup.string().required("Correct answer is required"),
+  topic: Yup.string().required("Topic is required"),
+  id: Yup.number().notRequired(),
+});
+
+const fetchQuestionSchema = Yup.object().shape({
+  topics: Yup.array()
+    .min(1, "Option must have at least one string")
+    .required("Options is required"),
+});
+
+const updateScoreSchema = Yup.object().shape({
+  score: Yup.number().required("Score is required"),
+  userId: Yup.string().required("User ID is required"),
+});
+
 module.exports = {
   registrationSchema,
   loginSchema,
+  topicIdSchema,
+  addTopicSchema,
+  addQuestionSchema,
+  fetchQuestionSchema,
+  updateScoreSchema
 };

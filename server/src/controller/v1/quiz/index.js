@@ -48,50 +48,6 @@ const deleteTopic = async (req, res) => {
     });
   }
 };
-
-const selectTopis = async (req, res) => {
-  try {
-    const { topic, userId } = req.body;
-    const user = await User.findById(userId);
-    if (!user) return res.status(400).json({ error: "User not found" });
-    if (user.topics.includes(topic))
-      return res.status(400).json({ error: "Topic already added." });
-    await User.updateOne(
-      { _id: userId },
-      {
-        $push: {
-          topics: topic,
-        },
-      }
-    );
-    res.status(200).json({ sucess: true, message: "Topic added in list." });
-  } catch (error) {
-    res.status(500).json({
-      error: error.message,
-    });
-  }
-};
-
-const removeTopic = async (req, res) => {
-  try {
-    const { topic, userId } = req.body;
-    const user = await User.findById(userId);
-    if (!user) return res.status(400).json({ error: "User not found" });
-    await User.updateOne(
-      { _id: userId },
-      {
-        $pull: {
-          topics: topic,
-        },
-      }
-    );
-    res.status(200).json({ sucess: true, message: "Topic removed." });
-  } catch (error) {
-    res.status(500).json({
-      error: error.message,
-    });
-  }
-};
 //questions
 
 const addQuestion = async (req, res) => {
@@ -155,9 +111,7 @@ const fetchQuestion = async (req, res) => {
   try {
     const { topics } = req.body;
     const questions = await Question.find({
-      topic: {
-        $in: topics,
-      },
+      topic: { $in: [...topics] },
     });
     const randomQuestions = questions
       .sort(() => Math.random() - 0.5)
@@ -195,8 +149,37 @@ const updateScore = async (req, res) => {
   }
 };
 
+const getTopPlayers = async (req, res) => {
+  try {
+    const result = await User.find({}, { name: 1, score: 1 })
+      .sort({ score: -1 })
+      .limit(10);
+    res
+      .status(200)
+      .json({ sucess: true, message: "Score saved.", data: result });
+  } catch (error) {
+    res.status(500).json({
+      error: error.message,
+    });
+  }
+};
+const getMyScore = async (req, res) => {
+  try {
+    const user = req.user;
+    const result = await User.findOne({ email: user.email }, { name: 1, score: 1 })
+      .sort({ score: -1 })
+      .limit(10);
+    res
+      .status(200)
+      .json({ sucess: true, message: "Score saved.", data: result });
+  } catch (error) {
+    res.status(500).json({
+      error: error.message,
+    });
+  }
+};
+
 module.exports = {
-  selectTopis,
   addTopics,
   fetchTopicList,
   deleteTopic,
@@ -204,6 +187,7 @@ module.exports = {
   deleteQuestion,
   editQuestion,
   fetchQuestion,
-  removeTopic,
   updateScore,
+  getTopPlayers,
+  getMyScore,
 };
